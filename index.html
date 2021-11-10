@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap icons cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <title>Shipments</title>
+  </head>
+
+  <body>
+    <div class="container border mt-3  pt-1">
+      <!-- 1st row -->
+      <div class="row border-top border-bottom mb-2">
+        <div class="col-sm-10 title d-flex">
+          <i class="bi bi-truck"></i>
+          <h2 class="mx-4">Shipments</h2>
+        </div>
+        <div class="col-sm-2 search-bar">
+          <input
+            type="search"
+            class="form-control border-primary p-1 m-2"
+            placeholder="search..."
+            id="search" autofocus="true"
+          />
+        </div>
+      </div>
+
+      <!-- 2nd-row -->
+      <div class="row mb-2 py-2 text-white Shipmts-row" data-id="002-232" style="background-color: #cc6600">
+        <div class="col-sm-8">
+          <h4>#<span data-id="002-232">002-232</span></h4>
+        </div>
+        <div class="col-sm-4">
+          <div class="btn-group text-center">
+            <button class="btn btn-md border-secondary bg-white btn-view-more" data-id="1">
+              <i class="bi bi-eye-fill float-start"></i> View More
+            </button>
+            <button class="btn btn-md border-secondary bg-white">
+              <i class="bi bi-pencil-square"></i> Edit
+            </button>
+            <button class="btn btn-md border-secondary bg-white fw-bolder">
+              Balance: $2,140.00
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 1st class display none -->
+      <div class="row d-none" id="invis-1">
+        <div class="btn-visit">
+          <button
+            class="btn btn-lg float-end text-white"
+            style="background-color: #cc6600"
+          >
+            <i class=""></i>Visit Shipments Page
+          </button>
+        </div>
+        <table class="table table-striped border border-2 mt-2">
+          <thead class="border-bottom-danger">
+            <th>Rate</th>
+            <th>Weight</th>
+            <th>Items</th>
+            <th>Flight/Container</th>
+            
+          </thead>
+          <tbody>
+            <td>$7.00</td>
+            <td>300.0</td>
+            <td>30</td>
+            <td>1</td>
+        
+          </tbody>
+        </table>
+
+        <div class="container-fluid bg-light">
+          <table class="table table-striped float-end w-25 mt-3">
+            <tbody>
+              <tr>
+                <th>Subtotal</th>
+                <td>$2,100.00</td>
+              </tr>
+              <tr>
+                <th>Other Charges</th>
+                <td>$40.00</td>
+              </tr>
+              <tr>
+                <th>Total Amount</th>
+                <td>$2,140.00</td>
+              </tr>
+              <tr>
+                <th>Amount Paid</th>
+                <td>$0.00</td>
+              </tr>
+              <tr>
+                <th>Balance</th>
+                <td>$2,140.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- ============ -->
+         <!-- 3rd-row -->
+         <div class="row mb-2 py-2 text-white Shipmts-row" data-id="001-232" style="background-color: #cc6600">
+            <div class="col-sm-8">
+              <h4>#<span data-id="001-232">001-232</span></h4>
+            </div>
+            <div class="col-sm-4">
+              <div class="btn-group text-center">
+                <button class="btn btn-md border-secondary bg-white btn-view-more" data-id="2">
+                  <i class="bi bi-eye-fill float-start"></i> View More
+                </button>
+                <button class="btn btn-md border-secondary bg-white">
+                  <i class="bi bi-pencil-square"></i> Edit
+                </button>
+                <button class="btn btn-md border-secondary bg-white fw-bolder">
+                  Balance: $2,140.00
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- 2nd class display none -->
+          <div class="row d-none " id="invis-2">
+            <div class="btn-visit">
+              <button
+                class="btn btn-lg float-end text-white"
+                style="background-color: #cc6600"
+              >
+                <i class=""></i>Visit Shipments Page
+              </button>
+            </div>
+            <table class="table table-striped border border-2 mt-2">
+              <thead class="border-bottom-danger">
+                <th>Rate</th>
+                <th>Weight</th>
+                <th>Items</th>
+                <th>Flight/Container</th>
+                <th></th>
+                <th></th>
+              </thead>
+              <tbody>
+                <td>$7.00</td>
+                <td>300.0</td>
+                <td>30</td>
+                <td>1</td>
+                <td class="text-danger">Edit</td>
+                <td class="text-danger">Print</td>
+              </tbody>
+            </table>
+
+            <table class="table table-striped">
+               <tr>
+                <th>Amount(KES)</th>
+                <th>Receipt Number</th>
+                <th>Location </th>
+                <th>Status</th>
+                <th>Time</th>
+                <th></th>
+                <th></th>
+               </tr>
+               <tr>
+                   <td>200.00</td>
+                   <td>66498</td>
+                   <td>Eastleigh</td>
+                   <td>Cleared</td>
+                   <td>27 Jan !2:44 Am </td>
+                   <td>Edit</td>
+                   <td>Print</td>
+               </tr>
+               <tr>
+                <td>200.00</td>
+                <td>66498</td>
+                <td>Eastleigh</td>
+                <td>Cleared</td>
+                <td>27 Jan !2:44 Am </td>
+                <td>Edit</td>
+                <td>Print</td>
+               </tr>
+            </table>
+    
+            <div class="container-fluid bg-light">
+              <table class="table table-striped float-end w-25 mt-3">
+                <tbody>
+                  <tr>
+                    <th>Subtotal</th>
+                    <td>$2,100.00</td>
+                  </tr>
+                  <tr>
+                    <th>Other Charges</th>
+                    <td>$40.00</td>
+                  </tr>
+                  <tr>
+                    <th>Total Amount</th>
+                    <td>$2,140.00</td>
+                  </tr>
+                  <tr>
+                    <th>Amount Paid</th>
+                    <td>$0.00</td>
+                  </tr>
+                  <tr>
+                    <th>Balance</th>
+                    <td>$2,140.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+             <!-- 4th-row -->
+      <div class="row mb-2 py-2 text-white Shipmts-row" data-id="003-30" style="background-color: #cc6600">
+        <div class="col-sm-8">
+          <h4>#<span data-id="003-30">003-30</span></h4>
+        </div>
+        <div class="col-sm-4">
+          <div class="btn-group text-center">
+            <button class="btn btn-md border-secondary bg-white btn-view-more" data-id="3">
+              <i class="bi bi-eye-fill float-start"></i> View More
+            </button>
+            <button class="btn btn-md border-secondary bg-white">
+              <i class="bi bi-pencil-square"></i> Edit
+            </button>
+            <button class="btn btn-md border-secondary bg-white fw-bolder">
+              Balance: $2,140.00
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- 3rd class display none -->
+      <div class="row d-none" id="invis-3">
+        <div class="btn-visit">
+          <button
+            class="btn btn-lg float-end text-white"
+            style="background-color: #cc6600"
+          >
+            <i class=""></i>Visit Shipments Page
+          </button>
+        </div>
+        <table class="table table-striped border border-2 mt-2">
+          <thead class="border-bottom-danger">
+            <th>Rate</th>
+            <th>Weight</th>
+            <th>Items</th>
+            <th>Flight/Container</th>
+            <th></th>
+            <th></th>
+          </thead>
+          <tbody>
+            <td>$7.00</td>
+            <td>300.0</td>
+            <td>30</td>
+            <td>1</td>
+            <td class="text-danger">Edit</td>
+            <td class="text-danger">Print</td>
+          </tbody>
+        </table>
+
+        <div class="container-fluid bg-light">
+          <table class="table table-striped float-end w-25 mt-3">
+            <tbody>
+              <tr>
+                <th>Subtotal</th>
+                <td>$2,100.00</td>
+              </tr>
+              <tr>
+                <th>Other Charges</th>
+                <td>$40.00</td>
+              </tr>
+              <tr>
+                <th>Total Amount</th>
+                <td>$2,140.00</td>
+              </tr>
+              <tr>
+                <th>Amount Paid</th>
+                <td>$0.00</td>
+              </tr>
+              <tr>
+                <th>Balance</th>
+                <td>$2,140.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+         <!-- 5th-row -->
+         <div class="row mb-2 py-2 text-white Shipmts-row" data-id="004-980808" style="background-color: #cc6600">
+            <div class="col-sm-8">
+              <h4>#<span data-id="004-980808">004-980808</span></h4>
+            </div>
+            <div class="col-sm-4">
+              <div class="btn-group text-center">
+                <button class="btn btn-md border-secondary bg-white btn-view-more" data-id="4">
+                  <i class="bi bi-eye-fill float-start"></i> View More
+                </button>
+                <button class="btn btn-md border-secondary bg-white">
+                  <i class="bi bi-pencil-square"></i> Edit
+                </button>
+                <button class="btn btn-md border-secondary bg-white fw-bolder">
+                  Balance: $2,140.00
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- 4th class display none -->
+          <div class="row d-none" id="invis-4">
+            <div class="btn-visit">
+              <button
+                class="btn btn-lg float-end text-white"
+                style="background-color: #cc6600"
+              >
+                <i class=""></i>Visit Shipments Page
+              </button>
+            </div>
+            <table class="table table-striped border border-2 mt-2">
+              <thead class="border-bottom-danger">
+                <th>Rate</th>
+                <th>Weight</th>
+                <th>Items</th>
+                <th>Flight/Container</th>
+                <th></th>
+                <th></th>
+              </thead>
+              <tbody>
+                <td>$7.00</td>
+                <td>300.0</td>
+                <td>30</td>
+                <td>1</td>
+                <td class="text-danger">Edit</td>
+                <td class="text-danger">Print</td>
+              </tbody>
+            </table>
+    
+            <div class="container-fluid bg-light">
+              <table class="table table-striped float-end w-25 mt-3">
+                <tbody>
+                  <tr>
+                    <th>Subtotal</th>
+                    <td>$2,100.00</td>
+                  </tr>
+                  <tr>
+                    <th>Other Charges</th>
+                    <td>$40.00</td>
+                  </tr>
+                  <tr>
+                    <th>Total Amount</th>
+                    <td>$2,140.00</td>
+                  </tr>
+                  <tr>
+                    <th>Amount Paid</th>
+                    <td>$0.00</td>
+                  </tr>
+                  <tr>
+                    <th>Balance</th>
+                    <td>$2,140.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+           <!-- 6th-row -->
+         <div class="row mb-2 py-2 text-white Shipmts-row" data-id="002-232345" style="background-color: #cc6600">
+          <div class="col-sm-8">
+            <h4>#<span data-id="002-232345">002-232345</span></h4>
+          </div>
+          <div class="col-sm-4">
+            <div class="btn-group text-center">
+              <button class="btn btn-md border-secondary bg-white  btn-view-more" data-id="5">
+                <i class="bi bi-eye-fill float-start"></i> View More
+              </button>
+              <button class="btn btn-md border-secondary bg-white">
+                <i class="bi bi-pencil-square"></i> Edit
+              </button>
+              <button class="btn btn-md border-secondary bg-white fw-bolder">
+                Balance: $2,140.00
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- 5th class display none -->
+        <div class="row d-none" id="invis-5">
+          <div class="btn-visit">
+            <button
+              class="btn btn-lg float-end text-white"
+              style="background-color: #cc6600"
+            >
+              <i class=""></i>Visit Shipments Page
+            </button>
+          </div>
+          <table class="table table-striped border border-2 mt-2">
+            <thead class="border-bottom-danger">
+              <th>Rate</th>
+              <th>Weight</th>
+              <th>Items</th>
+              <th>Flight/Container</th>
+              <th></th>
+              <th></th>
+            </thead>
+            <tbody>
+              <td>$7.00</td>
+              <td>300.0</td>
+              <td>30</td>
+              <td>1</td>
+              <td class="text-danger">Edit</td>
+              <td class="text-danger">Print</td>
+            </tbody>
+          </table>
+  
+          <div class="container-fluid bg-light">
+            <table class="table table-striped float-end w-25 mt-3">
+              <tbody>
+                <tr>
+                  <th>Subtotal</th>
+                  <td>$2,100.00</td>
+                </tr>
+                <tr>
+                  <th>Other Charges</th>
+                  <td>$40.00</td>
+                </tr>
+                <tr>
+                  <th>Total Amount</th>
+                  <td>$2,140.00</td>
+                </tr>
+                <tr>
+                  <th>Amount Paid</th>
+                  <td>$0.00</td>
+                </tr>
+                <tr>
+                  <th>Balance</th>
+                  <td>$2,140.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+         <!-- 7th-row -->
+         <div class="row mb-2 py-2 text-white Shipmts-row"  data-id="008-23299" style="background-color: #cc6600">
+          <div class="col-sm-8">
+            <h4>#<span data-id="008-23299">008-23299</span></h4>
+          </div>
+          <div class="col-sm-4">
+            <div class="btn-group text-center">
+              <button class="btn btn-md border-secondary bg-white btn-view-more" data-id="6">
+                <i class="bi bi-eye-fill float-start"></i> View More
+              </button>
+              <button class="btn btn-md border-secondary bg-white">
+                <i class="bi bi-pencil-square"></i> Edit
+              </button>
+              <button class="btn btn-md border-secondary bg-white fw-bolder">
+                Balance: $2,140.00
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- 6th class display none -->
+        <div class="row d-none" id="invis-6">
+          <div class="btn-visit">
+            <button
+              class="btn btn-lg float-end text-white"
+              style="background-color: #cc6600"
+            >
+              <i class=""></i>Visit Shipments Page
+            </button>
+          </div>
+          <table class="table table-striped border border-2 mt-2">
+            <thead class="border-bottom-danger">
+              <th>Rate</th>
+              <th>Weight</th>
+              <th>Items</th>
+              <th>Flight/Container</th>
+              <th></th>
+              <th></th>
+            </thead>
+            <tbody>
+              <td>$7.00</td>
+              <td>300.0</td>
+              <td>30</td>
+              <td>1</td>
+              <td class="text-danger">Edit</td>
+              <td class="text-danger">Print</td>
+            </tbody>
+          </table>
+  
+          <div class="container-fluid bg-light">
+            <table class="table table-striped float-end w-25 mt-3">
+              <tbody>
+                <tr>
+                  <th>Subtotal</th>
+                  <td>$2,100.00</td>
+                </tr>
+                <tr>
+                  <th>Other Charges</th>
+                  <td>$40.00</td>
+                </tr>
+                <tr>
+                  <th>Total Amount</th>
+                  <td>$2,140.00</td>
+                </tr>
+                <tr>
+                  <th>Amount Paid</th>
+                  <td>$0.00</td>
+                </tr>
+                <tr>
+                  <th>Balance</th>
+                  <td>$2,140.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        
+         <!-- 8th-row -->
+         <div class="row mb-2 py-2 text-white Shipmts-row" data-id="005-323231" style="background-color: #cc6600">
+          <div class="col-sm-8">
+            <h4># <span data-id="005-323231">005-323231</span></h4>
+          </div>
+          <div class="col-sm-4">
+            <div class="btn-group text-center">
+              <button class="btn btn-md border-secondary bg-white btn-view-more" data-id="7">
+                <i class="bi bi-eye-fill float-start"></i> View More
+              </button>
+              <button class="btn btn-md border-secondary bg-white">
+                <i class="bi bi-pencil-square"></i> Edit
+              </button>
+              <button class="btn btn-md border-secondary bg-white fw-bolder">
+                Balance: $2,140.00
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- 7th class display none -->
+        <div class="row d-none" id="invis-7">
+          <div class="btn-visit">
+            <button
+              class="btn btn-lg float-end text-white"
+              style="background-color: #cc6600"
+            >
+              <i class=""></i>Visit Shipments Page
+            </button>
+          </div>
+          <table class="table table-striped border border-2 mt-2">
+            <thead class="border-bottom-danger">
+              <th>Rate</th>
+              <th>Weight</th>
+              <th>Items</th>
+              <th>Flight/Container</th>
+              <th></th>
+              <th></th>
+            </thead>
+            <tbody>
+              <td>$7.00</td>
+              <td>300.0</td>
+              <td>30</td>
+              <td>1</td>
+              <td class="text-danger">Edit</td>
+              <td class="text-danger">Print</td>
+            </tbody>
+          </table>
+  
+          <div class="container-fluid bg-light">
+            <table class="table table-striped float-end w-25 mt-3">
+              <tbody>
+                <tr>
+                  <th>Subtotal</th>
+                  <td>$2,100.00</td>
+                </tr>
+                <tr>
+                  <th>Other Charges</th>
+                  <td>$40.00</td>
+                </tr>
+                <tr>
+                  <th>Total Amount</th>
+                  <td>$2,140.00</td>
+                </tr>
+                <tr>
+                  <th>Amount Paid</th>
+                  <td>$0.00</td>
+                </tr>
+                <tr>
+                  <th>Balance</th>
+                  <td>$2,140.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- total search display -->
+        <div class="row d-none" id="list-display">
+          <div class="btn-visit">
+            <button
+              class="btn btn-lg float-end text-white"
+              style="background-color: #cc6600"
+            >
+              <i class="bi bi-eye-fill float-start"></i>Other Payments(Not linked)
+            </button>
+          </div>
+          <table class="table table-striped border border-2 mt-2">
+            <thead class="border-bottom-danger">
+              <th>Rate</th>
+              <th>Weight</th>
+              <th>Items</th>
+              <th>Flight/Container</th>
+              <th></th>
+              <th></th>
+            </thead>
+            <tbody>
+              <td>$7.00</td>
+              <td>300.0</td>
+              <td>30</td>
+              <td>1</td>
+              <td class="text-danger">Edit</td>
+              <td class="text-danger">Print</td>
+            </tbody>
+          </table>
+
+          <table class="table table-striped">
+             <tr>
+              <th>Amount(KES)</th>
+              <th>Receipt Number</th>
+              <th>Location </th>
+              <th>Status</th>
+              <th>Time</th>
+              <th></th>
+              <th></th>
+             </tr>
+             <tr>
+                 <td>200.00</td>
+                 <td>66498</td>
+                 <td>Eastleigh</td>
+                 <td>Cleared</td>
+                 <td>27 Jan !2:44 Am </td>
+                 <td>Edit</td>
+                 <td>Print</td>
+             </tr>
+             <tr>
+              <td>200.00</td>
+              <td>66498</td>
+              <td>Eastleigh</td>
+              <td>Cleared</td>
+              <td>27 Jan !2:44 Am </td>
+              <td>Edit</td>
+              <td>Print</td>
+             </tr>
+          </table>
+  
+          
+
+    </div>
+
+    <!-- javascript -->
+    <script src="js/main.js"></script>
+    <!-- bootstrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
